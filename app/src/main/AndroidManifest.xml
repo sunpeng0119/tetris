@@ -23,10 +23,16 @@
             android:label="@string/title_activity_game"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action  android:name="gamestart"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="gamestart" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
     </application>
 
 </manifest>
